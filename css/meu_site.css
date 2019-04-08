@@ -1,0 +1,35 @@
+html{
+	background: url(../images/2pac_shakur.jpg) no-repeat center fixed; 
+	background-size: cover;
+}
+
+body{
+	color: white;
+}
+
+#div_inicio{
+	text-align: center;
+}
+
+#div_interna1{
+	padding-left: 10%;
+	width: 80%;
+	height: 80%;
+}
+
+table{
+	
+	border: solid 1px white;
+	width: 50%;
+	margin-left: 25%;
+}
+
+#tabela_jogos tr td{
+	border: solid 1px white;
+	border-collapse: collapse;
+	padding: 1px;
+}
+
+#tabela_filmes{
+	text-align: left;
+}
