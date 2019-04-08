@@ -50,12 +50,12 @@ img{
 }
 
 table{
-	
 	border: solid 1px white;
 	width: 50%;
 	margin-left: 25%;
 }
 
-#tabela_filmes{
-	text-align: left;
+#tabela_filmes tr td{
+	border: solid 5px;
 }
+
