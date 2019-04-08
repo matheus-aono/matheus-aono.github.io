@@ -7,6 +7,10 @@ body{
 	color: white;
 }
 
+img{
+	border-radius: 30px;
+}
+
 #div_inicio{
 	text-align: center;
 }
@@ -17,17 +21,39 @@ body{
 	height: 80%;
 }
 
+#div_jogos p{
+	color: black;
+	border: solid 5px;
+	border-radius: 5px;
+	background-color: white;
+	width: 20%;
+	margin-left: 40%;
+}
+
+#div_jogos img{
+	opacity: 0.5;
+	border-style: solid 10px;
+	transition: border 1s;
+	border-radius: 30px;
+}
+
+#div_jogos img:hover{
+	opacity: 1.0;
+	border-style: solid;
+	border-radius: 30px 10px;
+	border-color: #66c2ff;
+}
+
+#div_interna2 ul{
+	text-align: left;
+	margin-left: 30%;
+}
+
 table{
 	
 	border: solid 1px white;
 	width: 50%;
 	margin-left: 25%;
-}
-
-#tabela_jogos tr td{
-	border: solid 1px white;
-	border-collapse: collapse;
-	padding: 1px;
 }
 
 #tabela_filmes{
