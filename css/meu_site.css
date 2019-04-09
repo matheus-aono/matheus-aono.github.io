@@ -1,3 +1,32 @@
+@keyframes img_2pac{
+	0% {border-color: blue; right:450px; top:0px;}
+	25% {border-color: green; right:0px; top:0px;}
+	50% {border-color: yellow; right:0px; top:0px;}
+	75% {border-color: red; right:0px; top:0px;}
+	100% {border-color: blue; right:0px; top:0px;}
+}
+
+@keyframes img_games{
+	0% {right:450px; top:0px;}
+	25% {right:0px; top:0px;}
+	50% {right:0px; top:0px;}
+	75% {right:0px; top:0px;}
+	100% {right:0px; top:0px;}
+}
+
+#img_games{
+	animation-name: img_2pac;
+	animation-duration: 4s;
+	position: relative;
+}
+
+#img_2pac{
+	animation-name: img_2pac;
+	animation-duration: 4s;
+	position: relative;
+	animation-direction: alternate;
+}
+
 html{
 	background: url(../images/2pac_shakur.jpg) no-repeat center fixed; 
 	background-size: cover;
@@ -44,18 +73,44 @@ img{
 	border-color: #66c2ff;
 }
 
-#div_interna2 ul{
+#div_interna2 ul li{
 	text-align: left;
-	margin-left: 30%;
+	text-align: justify;
+	white-space: nowrap;
 }
 
 table{
-	border: solid 1px white;
+	border-collapse: collapse  1px white;
 	width: 50%;
 	margin-left: 25%;
 }
 
 #tabela_filmes tr td{
 	border: solid 5px;
+	white-space: nowrap;
+	border-radius: 30px 10px;
+}
+
+#tabela_filmes img{
+	opacity: 0.5;
+	border-style: solid 10px;
+	transition: border 1s;
+	border-radius: 30px;
+}
+
+#tabela_filmes img:hover{
+	opacity: 1.0;
+	border-style: solid;
+	border-radius: 30px 10px;
+	border-color: #66c2ff;
+}
+
+#div_lista{
+	width: 30%;
+	margin-left: 45%;
+}
+
+#div_lista ul li{
+	text-align: left;
 }
 
