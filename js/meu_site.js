@@ -1,4 +1,77 @@
-var nome = prompt("Por favor, insira seu nome");
+<script>
+  function sorteia(){
 
-alert("Prazer " + nome + ", seja bem-vindo ao meu site!");
+    return Math.round(Math.random() * 10);
+  }
 
+  function sorteiaNumeros(quantidade){
+
+    var segredos = [];
+
+    var numero = 1;
+
+    while(numero <= quantidade){
+
+      var numeroAleatorio = sorteia();
+
+      if(numeroAleatorio != 0){
+
+        var achou = false;
+
+        for(var posicao = 0; posicao < segredos.length; posicao++){
+
+          if(segredos[posicao] == numeroAleatorio){
+            achou = true;
+            break;
+          }
+        }
+
+          if(achou == false){
+          segredos.push(numeroAleatorio);
+          numero++;
+          }
+      }
+    }
+
+    return segredos;
+  }
+
+  var segredos = sorteiaNumeros(4);
+  var input = document.querySelector("input");
+  input.focus();
+
+  function verifica(){
+    var achou = false;
+
+    for(var posicao = 0; posicao < segredos.length; posicao++){
+
+      if(input.value == segredos[posicao]){
+
+        alert("Você Acertou!");
+        achou = true;
+        break;
+      }
+    }
+
+    if(achou == false){
+      alert("Você Errou!");
+    }
+
+    input.value = "";
+    input.focus();
+  }
+
+  var button = document.querySelector("button");
+  button.onclick = verifica;
+
+  console.log(segredos);
+
+  $(document).ready(function(){
+    $("#hide").click(function(){
+      $("p").hide();
+    });
+    $("#show").click(function(){
+      $("p").show();
+    });
+  });
+</script>

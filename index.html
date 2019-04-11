@@ -6,11 +6,17 @@
 	    <link href="https://fonts.googleapis.com/css?family=Nunito:400" rel="stylesheet">
 	    <link rel="stylesheet" type="text/css" href="css/meu_site.css">
 	    <script src="js/meu_site.js" type="text/javascript"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<body>
 		<div id="div_inicio">
-			<h1>Um pouco sobre mim</h1>
+			<h2>Vamos fazer um jogo?</h2>
+			<h3>Tente adivinhar o número em que eu estou pensando</h3>
+			<input/>
+			<button>Compare seu chute!</button>
+
+			<h1>Agora um pouco sobre mim</h1>
 
 		    <h2>Meus gostos musicais</h2>
 
@@ -18,13 +24,16 @@
 
 		    <h4>Um pouco sobre Tupac</h4>
 
-		    <div id="div_interna1">
+				<div>
+					<button id="toggle">Biografia</button>
+				</div>
+				<div id="div_interna1">
 		    	<p>Tupac Amaru Shakur (1971-1996), conhecido por “2Pac” ou “Pac”, nasceu no bairro de East Harlen, Manhattan, Nova Iorque, Estados Unidos.</p>
 		    	<p>Além de sua carreira no rap, foi um ator bastante promissor e um ativista social. Grande parte dos sons de Shakur falavam sobre crescer no meio da violência e miséria dos guetos, racismo, outros problemas sociais e de conflitos com outros rappers durante a lendária rivalidade entre as costas leste e oeste.</p>
 		    </div>
 
-		    <img id="img_2pac" src="images/Tupac-Shakur.jpg" width="25%" height="25%"> 
-	   
+		    <img id="img_2pac" src="images/Tupac-Shakur.jpg" width="25%" height="25%">
+
 		    <h2>Meus jogos</h2>
 
 		    <h3>Minha preferência são os seguintes jogos:</h3>
@@ -32,13 +41,13 @@
 		    <div id="div_jogos">
 		    		<p>FIFA</p>
 		    		<a id="img_games" href="https://www.easports.com/br/fifa"><img src="images/fifa_19.jpg" width="25%" height="15%"></a>
-		    	
+
 		    		<p>NBA2K</p>
 		    		<a id="img_games" href="https://www.2k.com/en-US/game/nba-2k19-standard-edition/"><img src="images/nba2k_19.jpg" width="25%" height="35%"></a>
-		    	
+
 		    		<p>Counter Strike: Global Offensive</p>
 		    		<a id="img_games" href="https://blog.counter-strike.net/"><img src="images/cs_go.jpg" width="25%" height="35%"></a>
-		    	
+
 		    		<p>Assassin's Creed</p>
 		    		<a id="img_games" href="https://assassinscreed.ubisoft.com/game/pt-br/games"><img src="images/assassins_creed.jpg" width="15%" height="50%"></a>
 		    </div>
@@ -138,11 +147,6 @@
 			    	<li>Jogar vídeo-game</li>
 			    </ul>
 		    </div>
-
-		    <h2>Vamos fazer um jogo?</h2>
-		    <h3>Tente adivinhar o número em que eu estou pensando</h3>
-		    <input/>
-			<button>Compare seu chute!</button>
 	    </div>
 
 		<script>
@@ -158,7 +162,7 @@
 				var numero = 1;
 
 				while(numero <= quantidade){
-					
+
 					var numeroAleatorio = sorteia();
 
 					if(numeroAleatorio != 0){
@@ -172,7 +176,7 @@
 								break;
 							}
 						}
-						
+
 							if(achou == false){
 							segredos.push(numeroAleatorio);
 							numero++;
@@ -191,13 +195,13 @@
 				var achou = false;
 
 				for(var posicao = 0; posicao < segredos.length; posicao++){
-					
+
 					if(input.value == segredos[posicao]){
-						
+
 						alert("Você Acertou!");
 						achou = true;
 						break;
-					} 
+					}
 				}
 
 				if(achou == false){
@@ -210,8 +214,14 @@
 
 			var button = document.querySelector("button");
 			button.onclick = verifica;
-			
+
 			console.log(segredos);
+
+			$(document).ready(function(){
+	  		$("#toggle").click(function(){
+	    		$("#div_interna1").toggle(1000);
+		  	});
+			});
 		</script>
 	</body>
 </html>
