@@ -3,18 +3,19 @@
 	<head>
 		<title>Login</title>
 		<link href="https://fonts.googleapis.com/css?family=Nunito:400" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/meu_site.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/tela_login.js" type="text/javascript"></script>
 	</head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<body>
-		<form action="../index.html">
-			<p>Login</p>
-			<input type="text" name="login">
-			<p>Senha</p>
-			<input type="text" name="senha">
+		<form id="formulario" action="../index.html">
+			<p>Nome</p>
+			<input id="nome" type="text" name="nome" value="">
+			<p>Sobrenome</p>
+			<input id="sobrenome" type="text" name="sobrenome" value="">
 			<br><br>
-			<input type="submit" value="acessar">
+			<input id="botao" type="submit" value="acessar">
 		</form>
 	</body>
 </html>
