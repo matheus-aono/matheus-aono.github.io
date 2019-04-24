@@ -1,4 +1,4 @@
-<script>
+
   function sorteia(){
 
     return Math.round(Math.random() * 10);
@@ -66,12 +66,38 @@
 
   console.log(segredos);
 
-  $(document).ready(function(){
-    $("#hide").click(function(){
-      $("p").hide();
-    });
-    $("#show").click(function(){
-      $("p").show();
-    });
+  $("#div_interna1").hide();
+  $("#toggle").click(function(){
+    $("#div_interna1").toggle(1000);
   });
-</script>
+
+  $("#tabela_filmes2").hide();
+  $("#botao_filmes").click(function(){
+    $("#tabela_filmes2").toggle(1000);
+  });
+
+  $("#div_lista").hide();
+  $("#botao_esportes").click(function(){
+    $("#div_lista").toggle(1000);
+  });
+
+  $("#div_lista2").hide();
+  $("#botao_hobbies").click(function(){
+    $("#div_lista2").toggle(1000);
+  });
+
+  $(document).ready(function(){
+
+  $("#formulario").on("submit", function(e){
+          e.preventDefault();
+          var len1 = $("#nome").val().length;
+          var len2 = $("#senha").val().length;
+          if (len1 > 0 && len2 > 0) {
+              localStorage.setItem("nome", $("#nome").val());
+              localStorage.setItem("senha", $("#senha").val());
+              this.submit();
+          }else{
+            alert("Nome e/ou senha inválidos!");
+          }
+      });
+    });
