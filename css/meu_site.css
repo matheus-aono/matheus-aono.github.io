@@ -28,7 +28,7 @@
 }
 
 html{
-	background: url(../images/2pac_shakur.jpg) no-repeat center fixed; 
+	background: url(../images/2pac_shakur.jpg) no-repeat center fixed;
 	background-size: cover;
 }
 
@@ -112,4 +112,20 @@ table{
 
 #div_lista ul li{
 	text-align: left;
+}
+
+#div_lista2{
+	width: 30%;
+	margin-left: 45%;
+}
+
+#div_lista2 ul li{
+	text-align: left;
+}
+
+#botao_filmes, #botao_esportes, #botao_hobbies{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 20%;
+	width: 20%;
 }
