@@ -2,22 +2,27 @@
 <html>
 	<head>
 	    <title>Meus Gostos</title>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta charset="utf-8">
 	    <link href="https://fonts.googleapis.com/css?family=Nunito:400" rel="stylesheet">
 	    <link rel="stylesheet" type="text/css" href="css/meu_site.css">
-
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<body>
+		<a href="pagina2.html"><img id="imagem_santos" width="100%" height="350px" src="images/santos.jpg"></a>
+
 		<div id="div_inicio">
 			<form id="formulario" action="login.html">
 				<p>Nome</p>
-				<input id="nome" type="text" name="nome" value="">
+				<input class="form-control" id="nome" type="text" name="nome" value="">
 				<p>Senha</p>
-				<input id="senha" type="password" name="senha" value="">
+				<input class="form-control" id="senha" type="password" name="senha" value="">
 				<br><br>
-				<input type="submit" value="Acessar">
+				<input class="btn btn-primary" type="submit" value="Acessar">
 			</form>
 		</div>
 
