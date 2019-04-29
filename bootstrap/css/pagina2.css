@@ -1,3 +1,21 @@
+/* CSS GERAL */
+
+@keyframes img{
+	0% {border-color: blue; right:450px; top:0px;}
+	25% {border-color: green; right:0px; top:0px;}
+	50% {border-color: yellow; right:0px; top:0px;}
+	75% {border-color: red; right:0px; top:0px;}
+	100% {border-color: blue; right:0px; top:0px;}
+}
+
+#img{
+	animation-name: img;
+	animation-duration: 4s;
+	position: relative;
+	animation-direction: alternate;
+	border-radius: 30px;
+}
+
 h1, h2{
 	text-align: center;
 }
@@ -11,3 +29,24 @@ h1, h2{
 	margin-top: 10px;
 	text-align: center;
 }
+
+/* TITULOS */
+
+#titulos{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+th, td {
+	text-align: center;
+}
+
+td {
+	width: 10%;
+}
+
+.thead-dark{
+	width: auto;
+}
+
+/* RIVAIS */

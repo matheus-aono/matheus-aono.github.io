@@ -3,34 +3,42 @@
 	<head>
 		<title>Tudo sobre o Santos!</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta charset="utf-8">
-	    <link href="https://fonts.googleapis.com/css?family=Nunito:400" rel="stylesheet">
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	    <link rel="stylesheet" type="text/css" href="css/pagina2.css">
+	  <meta charset="utf-8">
+	  <link href="https://fonts.googleapis.com/css?family=Nunito:400" rel="stylesheet">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/pagina2.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<header>
-			<img src="images/santos_fundo.jpg" height="300px" width="100%">
+			<img id="img" src="images/santos_fundo.jpg" height="300px" width="100%">
 		</header>
 
 		<div class="container">
 			<div class="btn-group">
-    			<button type="button" class="btn btn-outline-dark">Títulos</button>
-    			<button type="button" class="btn btn-outline-dark">Rivais</button>
+    			<a href="titulos.html"><button type="button" class="btn btn-outline-dark">Títulos</button></a>
+					<div class="btn-group">
+						<button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown">Rivais</button>
+						<div class="dropdown-menu">
+								<a class="dropdown-item" href="screens/corinthians.html">Corinthians</a>
+								<a class="dropdown-item" href="#">São Paulo</a>
+								<a class="dropdown-item" href="#">Palmeiras</a>
+						</div>
+					</div>
+
     			<button type="button" class="btn btn-outline-dark">História</button>
     			<button type="button" class="btn btn-outline-dark">Torcida</button>
     			<button type="button" class="btn btn-outline-dark">Centro de Treinamento</button>
-    		</div>	
+    		</div>
 		</div>
-		
-		<h1>Santos sempre Santos!</h1>
+
+		<h1 class="display-2">Santos sempre Santos!</h1>
 
 		<div id="fundacao">
-			
-		<h2>Fundação</h2>
+
+		<h2 class="display-4">Fundação</h2>
 
 		<p>O Santos Futebol Clube foi fundado por iniciativa de três esportistas da cidade, Francisco Raymundo Marques, Mário Ferraz de Campos e Argemiro de Souza Júnior. Eles convidaram a todos os interessados para participar da reunião inaugural do novo clube, que foi constituído para ser destinado a prática do futebol, que no começo do século passado estava engatinhando no Brasil.
 		<br>
