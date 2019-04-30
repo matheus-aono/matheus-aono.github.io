@@ -4,9 +4,12 @@
 		<title>Tudo sobre o Santos!</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IEredge">
 	  <link href="https://fonts.googleapis.com/css?family=Nunito:400" rel="stylesheet">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	  <link rel="stylesheet" type="text/css" href="css/pagina2.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/estilos.css" type="text/css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -56,5 +59,41 @@
 		<br>
 		Na chamada “Década de Ouro”, nos anos de 1960, o time conquistou o mundo exibindo um futebol digno de aplausos, com conquistas constantes, não só no futebol brasileiro como também no planeta. A coroação maior desse time ícone da cidade de Santos aconteceu no ano de 1962, quando o Alvinegro mais famoso do mundo venceu todos os certames mais importantes disputados nesse ano e sagrando-se no ano seguinte Bicampeão Mundial. A FIFA outorgou ao clube o título de “O melhor time do século nas Américas”.</p>
 		</div>
+
+		<div class="container">
+			<button type="button" class="btn btn-outline-dark" onclick="iniciar();">Começar!</button>
+		</div>
+
+		<div id="principal">
+			<p></p>
+			<h1 class="display-3">JOKENPÔ</h1>
+			<div id="placar">
+				<div id="jogador">
+					<h2 id="nome-jogador"></h2>
+					<span id="jogador-pontos">0</span>
+					<ul id="jogador-escolha">
+						<li><a id="jogador-escolha-1" onclick="jogar(1)"><img src="https://raw.githubusercontent.com/ialexanderbrito/jokenpo/master/img/pedra.png"></a></li>
+						<li><a id="jogador-escolha-2" onclick="jogar(2)"><img src="https://raw.githubusercontent.com/ialexanderbrito/jokenpo/master/img/papel.png"></a></li>
+						<li><a id="jogador-escolha-3" onclick="jogar(3)"><img src="https://raw.githubusercontent.com/ialexanderbrito/jokenpo/master/img/tesoura.png"></a></li>
+					</ul>
+				</div>
+
+				<div id="versus">VS</div>
+
+				<div id="computador">
+					<h2 id="nome-computador">Computador</h2>
+					<span id="computador-pontos">0</span>
+					<ul id="computador-escolha">
+						<li><a id="computador-escolha-1" onclick="jogar(1)"><img src="https://raw.githubusercontent.com/ialexanderbrito/jokenpo/master/img/pedra.png"></a></li>
+						<li><a id="computador-escolha-2" onclick="jogar(2)"><img src="https://raw.githubusercontent.com/ialexanderbrito/jokenpo/master/img/papel.png"></a></li>
+						<li><a id="computador-escolha-3" onclick="jogar(3)"><img src="https://raw.githubusercontent.com/ialexanderbrito/jokenpo/master/img/tesoura.png"></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="mensagens"></div>
+		</div>
+
+		<script type="text/javascript" src="js/play.js"></script>
 	</body>
 </html>
