@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ 	<script src="../js/api.js"></script>
+</head>
+<body>
+		<h1 class="display-2" style="text-align: center">Um pouco sobre API!</h1>
+	<div class="container">
+    	<div class="modal" id="myModal">
+        	<div class="modal-dialog">
+            	<div class="modal-content">
+
+                 	<div class="modal-header">
+                    	<h4 class="modal-title">Modal Heading</h4>
+                    	<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 	</div>
+
+                	<div class="modal-body">
+                  		<p id="p1"></p>
+                  		<p id="p2"></p>
+                  		<img id="p3" src="" />
+                  		<p id="p4"></p>
+                	</div>
+        
+        
+                	<div class="modal-footer">
+                   		<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                	</div>
+        
+            	</div>
+           	</div>
+        </div>
+	</div>
+
+	<div class="container">
+		<form id="form1">
+	    	<h4>URL</h4>
+	        <input type="text" id="endereco">
+	        <br><br>
+	        <input type="submit" name="ENVIAR" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+	   	</form>
+   	</div>
+
+   	<div id="back" class="float-right">
+      <a href="../pagina2.html"><button type="button" class="btn btn-danger">Tela Principal</button></a>
+    </div>
+</body>
+</html>
