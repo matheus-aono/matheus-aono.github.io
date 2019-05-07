@@ -2,14 +2,18 @@
 <html>
 	<head>
 	    <title>Meus Gostos</title>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	    <link href="https://fonts.googleapis.com/css?family=Nunito:400" rel="stylesheet">
 	    <link rel="stylesheet" type="text/css" href="css/meu_site.css">
-
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<body>
+	<body style="background-image: linear-gradient(#3399ff, white)">
 		<div id="div_inicio">
 			<form id="formulario" action="login.html">
 				<p>Nome</p>
@@ -17,7 +21,7 @@
 				<p>Senha</p>
 				<input id="senha" type="password" name="senha" value="">
 				<br><br>
-				<input type="submit" value="Acessar">
+				<input type="submit" value="Acessar" class="btn btn-dark">
 			</form>
 		</div>
 
@@ -25,7 +29,7 @@
 			<h2>Vamos fazer um jogo?</h2>
 			<h3>Tente adivinhar o número em que eu estou pensando</h3>
 			<input/>
-			<button>Compare seu chute!</button>
+			<button class="btn btn-dark">Compare seu chute!</button>
 
 			<h1>Agora um pouco sobre mim</h1>
 
@@ -36,7 +40,7 @@
 		    <h4>Um pouco sobre Tupac</h4>
 
 				<div>
-					<button id="toggle">Biografia</button>
+					<button id="toggle" class="btn btn-dark">Biografia</button>
 				</div>
 				<br/>
 				<div id="div_interna1">
@@ -116,7 +120,7 @@
 		   		</table>
 		    </div>
 
-		    <button id="botao_filmes">Outros Filmes</button>
+		    <button id="botao_filmes" class="btn btn-dark">Outros Filmes</button>
 				<br><br>
 
 		    <table id="tabela_filmes2">
@@ -140,7 +144,7 @@
 		    	</tr>
 		    </table>
 
-				<button id="botao_esportes">Esportes</button>
+				<button id="botao_esportes" class="btn btn-dark">Esportes</button>
 				<br><br>
 
 		    <div id="div_lista">
@@ -151,7 +155,7 @@
 			    </ul>
 		    </div>
 
-		    <button id="botao_hobbies">Hobbies e Passatempos</button>
+		    <button id="botao_hobbies" class="btn btn-dark">Hobbies e Passatempos</button>
 				<br><br>
 
 		    <div id="div_lista2">
