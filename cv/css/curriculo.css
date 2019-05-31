@@ -1,0 +1,86 @@
+@keyframes foto{
+	0% {border-color: blue; left:45%; top:0px;}
+	25% {border-color: green; left:45%; top:0px;}
+	50% {border-color: yellow; left:45%; top:0px;}
+	75% {border-color: red; left:45%; top:0px;}
+	100% {border-color: blue; left:45%; top:0px;}
+}
+
+#foto{
+
+	border: 8px solid black;
+	animation-name: foto;
+	animation-duration: 4s;
+	position: relative;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+
+
+header {
+	background-color: #666;
+	padding: 30px;
+  	text-align: center;
+  	font-size: 35px;
+  	color: white;
+}
+
+h1{
+  margin-left: 40%;
+}
+
+h3{
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px blue;
+}
+
+table{
+  margin-left: 400px;
+  border-style: solid;
+}
+
+td{
+  border-top-style: outset;
+  border-bottom-style: solid;
+  text-align: center;
+}
+
+tr:nth-child(even){
+  background-color: lightgrey;
+}
+
+div{
+
+  border-top: 5px solid grey;
+  border-left: 5px dashed grey;
+  border-right: 5px dashed grey;
+  border-bottom: 5px solid grey;
+  padding: 5px;
+  margin-right: 1%;
+}
+
+#table{
+  margin-left: 2px;
+  border-style: solid;
+  width: 100%;
+}
+
+#table td, #table th{
+  border: 1px solid;
+  padding: 5px;
+}
+
+nav{
+	text-align: center;
+}
+
+img{
+	border-style: solid 0px;
+	transition: border 2s;
+}
+
+img:hover {
+	border-style: solid;
+}
