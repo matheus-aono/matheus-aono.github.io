@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 	<head>
@@ -188,3 +189,195 @@
 			<script src="js/meu_site.js" type="text/javascript"></script>
 	</body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Meus Gostos</title>
+
+	    <link href="https://fonts.googleapis.com/css?family=Nunito:400" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="css/meu_site.css">
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<body style="background-image: linear-gradient(#3399ff, white)">
+		<div id="div_login">
+			<input type="button" value="Login" class="btn btn-dark" data-toggle="modal" data-target="#myModal"></input>
+		</div>
+	
+		<div class="modal" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h4 class="modal-title">Modal Heading</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<div class="modal-body">
+						<div id="div_inicio">
+							<form id="formulario" action="login.html">
+								<p>Nome</p>
+								<input id="nome" type="text" name="nome" value="">
+								<p>Senha</p>
+								<input id="senha" type="password" name="senha" value="">
+								<br><br>
+								<input type="submit" value="Acessar" class="btn btn-dark">
+							</form>
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="div_inicio">
+
+			<h1>Agora um pouco sobre mim</h1>
+
+		    <h2>Meus gostos musicais</h2>
+
+		    <h3>Como preferência eu escolhi como cantora/cantor preferido o rapper Tupac Shakur</h3>
+
+		    <h4>Um pouco sobre Tupac</h4>
+
+				<div>
+					<button id="toggle" class="btn btn-dark">Biografia</button>
+				</div>
+				<br/>
+				<div id="div_interna1">
+		    	<p id="hide">Tupac Amaru Shakur (1971-1996), conhecido por “2Pac” ou “Pac”, nasceu no bairro de East Harlen, Manhattan, Nova Iorque, Estados Unidos.</p>
+		    	<p id="hide">Além de sua carreira no rap, foi um ator bastante promissor e um ativista social. Grande parte dos sons de Shakur falavam sobre crescer no meio da violência e miséria dos guetos, racismo, outros problemas sociais e de conflitos com outros rappers durante a lendária rivalidade entre as costas leste e oeste.</p>
+		    </div>
+
+		    <img id="img_2pac" src="images/Tupac-Shakur.jpg" width="25%" height="25%">
+
+		    <h2>Meus jogos</h2>
+
+		    <h3>Minha preferência são os seguintes jogos:</h3>
+
+		    <div id="div_jogos">
+		    		<p>FIFA</p>
+		    		<a id="img_games" href="https://www.easports.com/br/fifa"><img src="images/fifa_19.jpg" width="25%" height="15%"></a>
+
+		    		<p>NBA2K</p>
+		    		<a id="img_games" href="https://www.2k.com/en-US/game/nba-2k19-standard-edition/"><img src="images/nba2k_19.jpg" width="25%" height="35%"></a>
+
+		    		<p>Counter Strike: Global Offensive</p>
+		    		<a id="img_games" href="https://blog.counter-strike.net/"><img src="images/cs_go.jpg" width="25%" height="35%"></a>
+
+		    		<p>Assassin's Creed</p>
+		    		<a id="img_games" href="https://assassinscreed.ubisoft.com/game/pt-br/games"><img src="images/assassins_creed.jpg" width="15%" height="50%"></a>
+		    </div>
+
+		    <h2>Meus filmes</h2>
+
+		    <h3>Esses são os filmes que mais me agradaram</h3>
+
+		   <div id="div_interna2">
+		   		<table id="tabela_filmes">
+		   			<tr>
+		   				<td>Velozes e Furiosos</td>
+		   				<td>
+			    			<ul>
+			    				<li>Velozes e Furiosos 1</li>
+			    				<li>+Velozes e +Furiosos</li>
+			    				<li>Velozes e Furiosos: Desafio em Toquio</li>
+			    				<li>Velozes e Furiosos 4</li>
+			    				<li>Velozes e Furiosos 5: Operação Rio</li>
+			    				<li>Velozes e Furiosos 6</li>
+			    				<li>Velozes e Furiosos 7</li>
+			    				<li>Velozes e Furiosos 8</li>
+			    			</ul>
+		   				</td>
+		   				<td><a href="https://www.universalpics.com.br/"><img id="img_fast" src="images/fast_furious.jpg" width="250px" height="200px"></a></td>
+		   			</tr>
+					<tr>
+						<td>Harry Potter</td>
+						<td>
+							<ul>
+								<li>Harry Potter e a Pedra Filosofal</li>
+								<li>Harry Potter e a Câmara Secreta</li>
+								<li>Harry Potter e o Prisioneiro de Askaban</li>
+								<li>Harry Potter e o Calice de Fogo</li>
+								<li>Harry Potter e a Ordem da Fênix</li>
+								<li>Harry Potter e o Enigma do Príncipe</li>
+								<li>Harry Potter e as Relíquias da Morte: Parte 1</li>
+								<li>Harry Potter e as Relíquias da Morte: Parte 2</li>
+							</ul>
+						</td>
+						<td><a href="https://www.pottermore.com/"><img src="images/harry_potter.jpg" width="250px" height="200px"/></a></td>
+		    		</tr>
+					<tr>
+						<td>Divergente</td>
+						<td>
+							<ul>
+								<li>Divergente</li>
+								<li>Insurgente</li>
+								<li>Convergente</li>
+							</ul>
+						</td>
+						<td><a href="http://divergentebrasil.com/"><img src="images/divergente.jpg" width="250px" height="200px"/></a></td>
+		    		</tr>
+		   		</table>
+		    </div>
+
+		    <button id="botao_filmes" class="btn btn-dark">Outros Filmes</button>
+				<br><br>
+
+		    <table id="tabela_filmes2">
+		    	<tr>
+		    		<td>Amanhecer Violento</td>
+		    	</tr>
+		    	<tr>
+		    		<td>Coach Carter</td>
+		    	</tr>
+		    	<tr>
+		    		<td>Meu Nome é Radio</td>
+		    	</tr>
+		    	<tr>
+		    		<td>Sempre ao Seu Lado</td>
+		    	</tr>
+		    	<tr>
+		    		<td>Creed</td>
+		    	</tr>
+		    	<tr>
+		    		<td>Star Wars</td>
+		    	</tr>
+		    </table>
+
+				<button id="botao_esportes" class="btn btn-dark">Esportes</button>
+				<br><br>
+
+		    <div id="div_lista">
+			    <ul>
+			    	<li>Futebol</li>
+			    	<li>Basquete</li>
+			    	<li>Boxe</li>
+			    </ul>
+		    </div>
+
+		    <button id="botao_hobbies" class="btn btn-dark">Hobbies e Passatempos</button>
+				<br><br>
+
+		    <div id="div_lista2">
+			    <ul>
+			    	<li>Tocar violão e pandeiro</li>
+			    	<li>Jogar Basquete</li>
+			    	<li>Assistir filmes e séries</li>
+			    	<li>Jogar vídeo-game</li>
+			    </ul>
+		    </div>
+	    </div>
+			<script src="js/meu_site.js" type="text/javascript"></script>
+	</body>
+</html>
+>>>>>>> e0d293ee979ab05be8febc70c10a4441541fe93c
