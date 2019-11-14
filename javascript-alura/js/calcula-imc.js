@@ -28,17 +28,18 @@ for(var i = 0; i < pacientes.length; i++){
     }
 
     if(pesoValido && alturaValida){
-        var contaImc = peso / (altura * altura);
-        infoImc.textContent = contaImc.toFixed(3);
+        var contaImc = calculaImc(peso, altura);
+        infoImc.textContent = contaImc;
     } 
 }
 
-var adicionar = document.querySelector("#adicionar-paciente");
+function calculaImc(peso, altura){
 
-adicionar.addEventListener("click", function(event){
-    event.preventDefault();
-    alert("Botão funcionando!");
-});
+    var imc = 0;
+    imc = peso / (altura * altura);
+
+    return imc.toFixed(3);;
+}
 
 
 
