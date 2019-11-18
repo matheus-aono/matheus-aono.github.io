@@ -4,17 +4,36 @@ adicionar.addEventListener("click", function(event){
     event.preventDefault();
     
     var form = document.querySelector("#formulario-paciente");
-
     var paciente = obtemInfoPaciente(form);
-
     var pacienteTr = montaTr(paciente);
+
+    var erros = validaPaciente(paciente);
+    console.log(erros);
+    
+    if(erros.length > 0){
+        exibeMensagemErro(erros);
+        return;
+    }
     
     var tabela = document.querySelector("#tabela-pacientes");
 
     tabela.appendChild(pacienteTr);
 
     form.reset();
+    var ulErro = document.querySelector("#mensagem-erro");
+    ulErro.innerHTML = "";
 });
+
+function exibeMensagemErro(erros){
+    var ul = document.querySelector("#mensagem-erro");
+    ul.innerHTML = "";
+
+    erros.forEach(function(erro){
+        var li = document.createElement("li");
+        li.textContent = erro;
+        ul.appendChild(li);
+    });
+}
 
 function obtemInfoPaciente (form){
 
@@ -50,4 +69,27 @@ function montaTd (dado, classe){
     td.classList.add(classe)
 
     return td;
+}
+
+function validaPaciente(paciente){
+
+    var erros = [];
+
+    if(paciente.nome.length == 0){
+        erros.push("O nome não pode ser em branco");
+    }
+
+    if(paciente.gordura.length == 0){
+        erros.push("A gordura não pode ser em branco");
+    }
+
+    if(!validaPeso(paciente.peso)){
+        erros.push("Peso inválido");
+    } 
+
+    if(!validaAltura(paciente.altura)){
+        erros.push("Altura inválida");
+    } 
+
+    return erros;
 }
