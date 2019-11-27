@@ -7,7 +7,21 @@ buscar.addEventListener("click", function(){
     api.open("GET", "https://api-pacientes.herokuapp.com/pacientes");
 
     api.addEventListener("load", function(){
-        console.log(api.responseText);
+        
+        var erroAjax = document.querySelector("#erro-ajax");
+
+        if(api.status == 200){
+            erroAjax.classList.add("invisivel");
+            var resposta = api.responseText;
+            var paciente = JSON.parse(resposta);
+
+            paciente.forEach(function(paciente) {
+            adicionaPacienteNaTabela(paciente);
+        });
+        } else {
+            erroAjax.classList.remove("invisivel");
+        }
+
         
     });
 
