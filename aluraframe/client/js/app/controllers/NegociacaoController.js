@@ -1,16 +1,18 @@
 class NegociacaoController{
 
+    constructor(){
+        let $ = document.querySelector.bind(document);
+
+        this._inputData = $("#data");
+        this._inputQuantidade = $("#quantidade");
+        this._inputValor = $("#valor");
+    }
+
     adiciona(event){
         event.preventDefault();
         
-        let $ = document.querySelector.bind(document);
-
-        let inputData = $("#data");
-        let inputQuantidade = $("#quantidade");
-        let inputValor = $("#valor");
-
-        console.log(inputData.value);
-        console.log(inputQuantidade.value);
-        console.log(inputValor.value);
+        let data = new Date(this._inputData.value.split("-"));
+        console.log(data);
+        
     }
 }
