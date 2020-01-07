@@ -4,4 +4,4 @@
 
 # https://matheus-aono.github.io/javascript-alura
 
-# https://matheus-aono.github.io/sistema-de-pontos
+# https://matheus-aono.github.io/aluraframe/client
